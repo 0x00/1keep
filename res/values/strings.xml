@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">1Keep</string>
+    <string name="passplease">Enter your master password</string>
+    <string name="action_settings">Settings</string>
+    <string name="ok">next</string>
+    <string name="entersite">Enter Website</string>
+    <string name="yourpw">Your password is:</string>
+    <string name="showPw">Show</string>
+    <string name="hidePw">Hide</string>
+    <string name="copyclip">Copy to clipboard</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="thisispwnumber">This is password number</string>
+    <string name="blank"></string>
+    <string name="tooshort">The master password is far too short!</string>
+    <string name="store">add to history</string>
+
+</resources>
