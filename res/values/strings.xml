@@ -16,5 +16,6 @@
     <string name="blank"></string>
     <string name="tooshort">The master password is far too short!</string>
     <string name="store">add to history</string>
+    <string name="invaderdescription">This is your personal space invader which bases on your master password. If you don\'t recognize your character check your master mantra again. Maybe there is a typo.</string>
 
 </resources>

@@ -24,4 +24,8 @@ public class Glyph {
 		chars.addAll(ascii(97, 123));
 	}
 
+	public int idx(char c) {
+		return chars.indexOf(c + "");
+	}
+
 }

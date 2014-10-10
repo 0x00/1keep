@@ -11,9 +11,10 @@ public class Random {
 
 	public Random(String string) {
 		this.seed = 1.0;
-
+		Glyph gl = new Glyph();
+		
 		for (char c : string.toCharArray()) {
-			this.seed += Character.getNumericValue(c);
+			this.seed += gl.idx(c);
 		}
 
 	}

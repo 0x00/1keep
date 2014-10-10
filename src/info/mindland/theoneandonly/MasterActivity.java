@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,6 +38,30 @@ public class MasterActivity extends ActionBarActivity {
 		final TextView hint = (TextView) findViewById(R.id.hint);
 
 		final EditText pwbox = (EditText) findViewById(R.id.websitename);
+		
+		final SpaceInvader si = (SpaceInvader) findViewById(R.id.spaceInvader1);
+		
+		TextWatcher watcher = new TextWatcher() {
+			
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				si.setSeed(s.toString());
+				si.postInvalidate();
+			}
+			
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count,
+					int after) {
+				
+			}
+			
+			@Override
+			public void afterTextChanged(Editable s) {
+				
+			}
+		};
+		pwbox.addTextChangedListener(watcher );
+		
 		pwbox.requestFocus();
 
 		ListView history = (ListView) findViewById(R.id.historyList);

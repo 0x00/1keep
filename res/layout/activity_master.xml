@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="top"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -30,19 +31,11 @@
         <requestFocus />
     </EditText>
 
-    <TextView
-        android:id="@+id/hint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/websitename"
-        android:layout_below="@+id/showPw"
-        android:text="@string/blank" />
-
     <ListView
         android:id="@+id/historyList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/hint" >
+        android:layout_below="@+id/invaderdescription" >
 
     </ListView>
 
@@ -54,5 +47,29 @@
         android:layout_alignBottom="@+id/websitename"
         android:layout_alignRight="@+id/historyList"
         android:text="@string/ok" />
+
+    <info.mindland.theoneandonly.SpaceInvader
+        android:id="@+id/spaceInvader1"
+        android:layout_width="60pt"
+        android:layout_height="60pt"
+        android:layout_below="@+id/showPw" />
+
+    <TextView
+        android:id="@+id/invaderdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showPw"
+        android:layout_marginLeft="14dp"
+        android:layout_toLeftOf="@+id/showPw"
+        android:layout_toRightOf="@+id/spaceInvader1"
+        android:text="@string/invaderdescription" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/websitename"
+        android:layout_below="@+id/textView1"
+        android:text="@string/blank" />
 
 </RelativeLayout>
