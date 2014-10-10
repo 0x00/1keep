@@ -1,0 +1,93 @@
+body {
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #1e5799 0%, #2389bc 6%, #207cca 28%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(6%,#2389bc), color-stop(28%,#207cca), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #1e5799 0%,#2389bc 6%,#207cca 28%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #1e5799 0%,#2389bc 6%,#207cca 28%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #1e5799 0%,#2389bc 6%,#207cca 28%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom, #1e5799 0%,#2389bc 6%,#207cca 28%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#000000',GradientType=0 ); /* IE6 */
+}
+
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+body {
+    font-family: "Verdana";
+    font-size: 20px;
+}
+
+.panel{
+	background: #000;
+	color:#9ff;
+	margin: 30pt;
+	padding: 20pt;
+	border: #3ff 1px solid;
+	opacity: 0.8;
+	-webkit-box-shadow: 0 0 30px 2px #000000;
+	box-shadow: 0 0 30px 2px #000000;
+	max-width: 600pt;
+	min-width: 130pt;
+}
+
+
+.panel label{
+  display: inline-block;
+	width: 190pt;
+}
+
+
+.panel input{
+	padding:5pt;
+	margin: 15pt;
+	background: #666;
+	color: #fff;
+	border: #000 0px solid;
+	width: 150pt;
+	font-size: 12pt;
+	-webkit-box-shadow: 0 0 10px 2px #666;
+	box-shadow: 0 0 10px 2px #666;
+
+}
+
+.panel input.num{
+	width: 30pt;
+}
+
+.panel input.hidden{
+		background: #555;
+		color: #555;
+}
+
+.panel button{
+	padding:5pt;
+	margin: 15pt;
+	background: #000;
+	color: #fff;
+	border: #000 0px solid;
+	width: 70pt;
+	-webkit-box-shadow: 0 0 10px 2px #6ff;
+	box-shadow: 0 0 10px 2px #6ff;
+
+}
+
+table#history{
+  margin: 10pt;
+	padding: 10pt;
+	color: #fff;
+	width:100%;
+}
+
+table#history .hentry{
+  border-bottom: #9ff 1px solid;
+}
+/*
+h1#logo{
+  background-image: url("icon.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 30% 0px, center;
+}*/
