@@ -1,7 +1,7 @@
 function glyph(){
 	this.chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   this.num = function(ch){
-		return this.chars.indexOf(ch.toUpperCase());
+		return this.chars.indexOf(ch);
 	}
 }
 
@@ -49,7 +49,7 @@ function pw(master, login, num){
 	return p;
 }
 
-var valid = "UTOUUcxgmpILrfX"== pw("Checkthis", "no-op@0x00.ws", 19);
+var valid = "UTOUUcxgmpILrfX"== pw("CHECKTHIS", "NO-OP@0X00.WS", 19);
 if(!valid){
 	alert("Oh no! There is something wrong with the seed. Please check.");
 }
