@@ -62,10 +62,48 @@ website = document.getElementById("website");
 num = document.getElementById("pwnum");
 yourpw = document.getElementById("yourpw");
 
+can = document.getElementById("can");
+ctx = can.getContext("2d");
 
+function callInvader(seed){
+  if(seed.length==0) 
+		seed="lalala";
+	var rnd = new rand(seed);
+	var w = 7;
+	can.width = 100;
+	can.height = 100;
+
+	inv = [];
+	var tile = can.width/w;
+	for(var x=0; x<w; x++)for(var y=0; y<w; y++){
+		ctx.fillStyle = "#000";
+		var v = rnd.nextInt(2);
+		if(x<=w/2)
+			inv[x+y*w] = v;
+
+		if(x>w/2)
+			inv[x+y*w] = inv[(w-1-x)+y*w];
+
+
+		v = inv[x+y*w];
+	
+		if(v==1)
+			ctx.fillStyle = "#0af";
+		
+		if(v==2)
+			ctx.fillStyle = "#0ff";
+
+
+		ctx.fillRect(x*tile, y*tile, tile+1, tile+1);	
+	}
+	
+}
+
+callInvader("initial");
 function fill(){
-
 	yourpw.value = "";
+
+	callInvader(master.value);
 
 	n = parseInt(num.value);
 

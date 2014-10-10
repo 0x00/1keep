@@ -84,6 +84,21 @@ table#history{
 table#history .hentry{
   border-bottom: #9ff 1px solid;
 }
+
+canvas#can{
+	background: #090;
+	width: 100px;
+	height: 100px;
+	margin-left: auto;
+  margin-right: auto;
+	display: block;
+}
+
+p.small{
+	font-size: 9pt;
+
+}
+
 /*
 h1#logo{
   background-image: url("icon.png");
